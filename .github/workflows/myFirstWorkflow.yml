@@ -29,10 +29,13 @@ jobs:
   job3:
     name: JOB3
     needs: job1
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Job with single execution dependency
         run: sleep 10
+      - name: Checking runner info
+        shell: pwsh
+        run: get-computerinfo
 
   job4:
     name: JOB4
@@ -41,5 +44,7 @@ jobs:
     steps:
       - name: Job with multiple execution dependency
         run: sleep 10        
+      - name: Checking runner info
+        run: sw_vers          
 
         
