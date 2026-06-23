@@ -45,6 +45,27 @@ jobs:
           name: multiple_paths_with_exclusions
           path: | 
             ./myartifact.txt
+
+  job2:
+    name: JOB2
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking current directory
+        run: |
+          pwd
+          ls -ltr
+      - name: Download single file artifact
+        uses: actions/download-artifact@v5.0.0
+        with:
+          name: sigle_file
+      - name: checking current directory
+        run: | 
+          pwd
+          ls -ltr
+
+        
+      
+            
             artifacts/  
             !**/hostname.txt
 
