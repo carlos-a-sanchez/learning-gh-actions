@@ -1,0 +1,26 @@
+name: my-first-workflow
+# To get trigger on every push in this repo in any branch
+on: 
+  workflow_dispatch:
+  push:  
+
+jobs:
+  job1:
+    name: JOB1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step-1
+        run: | 
+          pwd
+          ls -ltr
+          hostname
+      - name: Checkout
+        uses: actions/checkout@v7.0.0
+      - name: Step-3
+        run: | 
+          pwd
+          ls -ltr
+          hostname
+
+
+        
