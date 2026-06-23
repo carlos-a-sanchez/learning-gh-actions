@@ -1,4 +1,4 @@
-name: my-first-workflow
+name: my-2nd-workflow
 # To get trigger on every push in this repo in any branch
 on: 
   workflow_dispatch:
@@ -63,10 +63,5 @@ jobs:
           pwd
           ls -ltr
 
-        
-      
-            
-            artifacts/  
-            !**/hostname.txt
 
         
