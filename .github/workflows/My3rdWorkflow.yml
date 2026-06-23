@@ -1,9 +1,12 @@
-name: my-2nd-workflow
+name: my-3rd-workflow
 # To get trigger on every push in this repo in any branch
 on: 
   workflow_dispatch:
-  push:  
-
+  push:
+    branches: 
+      - main
+      - dev
+      - 'feature-*'
 jobs:
   job1:
     name: JOB1
