@@ -73,7 +73,9 @@ jobs:
           name: single_file
       - name: Refering env variable
         run: |
-          echo "Running deployment for $ENV_TYPE with user $APP_USER "
+          echo "[INFO] Running deployment for $ENV_TYPE with user $APP_USER."
+          echo "[INFO] Application would be accesible on port $APP_PORT"
+          
       - name: checking current directory
         run: | 
           pwd
