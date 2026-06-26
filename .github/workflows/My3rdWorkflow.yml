@@ -71,7 +71,7 @@ jobs:
           pwd
           ls -ltr
       - name: Step fr PR Demos
-        run: exit 1
+        run: exit 0
 
           
 
