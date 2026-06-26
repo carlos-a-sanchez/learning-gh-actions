@@ -93,7 +93,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Referring context or in-built variable
-      - run: |
+        run: |
           echo "[INFO] Triggered by ${{ github.event_name }} "
 
 
