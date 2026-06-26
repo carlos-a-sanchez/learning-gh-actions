@@ -78,7 +78,7 @@ jobs:
 
       - name: Refering REPO SECRET
         run: |
-          echo "[INFO] Application pwd {{ secrets.AP_PASSWDW }}"          
+          echo "[INFO] Application pwd {{ secrets.APP_PASSWDW }}"          
           
       - name: checking current directory
         run: | 
