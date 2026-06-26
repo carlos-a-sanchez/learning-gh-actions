@@ -87,6 +87,13 @@ jobs:
       - name: Step fr PR Demos
         run: exit 0
 
-          
+  job3:
+    name: JOB3
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Referring context or in-built variable
+      - run: |
+          echo "[INFO] Triggered by ${{ github.event_name }} "
 
 
