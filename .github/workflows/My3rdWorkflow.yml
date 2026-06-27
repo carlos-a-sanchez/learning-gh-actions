@@ -52,7 +52,7 @@ jobs:
             ./myartifact.txt
             artifacts/     
       - name: Upload from multiple paths with exclusions
-        uses: actions/upload-artifact@v5.0.0
+        uAses: actions/upload-artifact@v5.0.0
         with:
           name: multiple_paths_with_exclusions
           path: | 
@@ -65,7 +65,7 @@ jobs:
     steps:
       - name: checking current directory
         run: |
-          pwd
+          pwd      a            a
           ls -ltr
       - name: Download single file artifact
         uses: actions/download-artifact@v5.0.0
@@ -99,5 +99,16 @@ jobs:
           echo "[INFO] Current step is running on ${{ runner.os }}."
           echo "[INFO] Current JOB ID is ${{ job.check_run_id }}."
           
+  staging:
+    name: STAGAE DEPLYMENT
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refering Env Variables
+        run: echo "[INFO] Running deplyment on ${{ vars.HOST }}" using ${{  vars.USER }}."
+      - name: Refering Secrets 
+        run: echo "[INFO] Password for ${{ vars.HOST }}" is  ${{ secrets.USER }}."
+        
 
 
+
+        
