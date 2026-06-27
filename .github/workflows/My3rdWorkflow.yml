@@ -100,13 +100,13 @@ jobs:
           echo "[INFO] Current JOB ID is ${{ job.check_run_id }}."
           
   staging:
-    name: STAGAE DEPLYMENT
+    name: STAGAE DEPLOYMENT
     runs-on: ubuntu-latest
     steps:
       - name: Refering Env Variables
         run: echo "[INFO] Running deplyment on ${{ vars.HOST }}" using ${{  vars.USER }}."
       - name: Refering Secrets 
-        run: echo "[INFO] Password for ${{ vars.HOST }}" is  ${{ secrets.USER }}."
+        run: echo "[INFO] Password for ${{ vars.USER }}" is  ${{ secrets.PASSWORD }}."
         
 
 
