@@ -97,7 +97,7 @@ jobs:
           echo "[INFO] Triggered by ${{ github.event_name }}."
           echo "[INFO] New changes are added by ${{ github.actor }} in ${{ github.ref_name }} branch."
           echo "[INFO] Current step is running on ${{ runner.os }}."
-          echo "[INFO] Current JOB ID is ${{ job.check_run_id }}.
+          echo "[INFO] Current JOB ID is ${{ job.check_run_id }}. 
           
 
 
