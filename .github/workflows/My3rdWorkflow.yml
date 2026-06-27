@@ -111,7 +111,7 @@ jobs:
       name: STAGING
         
           
-  staging:
+  Prod:
     name: PROD DEPLOYMENT
     runs-on: ubuntu-latest
     steps:
