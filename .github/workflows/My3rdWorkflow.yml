@@ -107,8 +107,20 @@ jobs:
         run: echo "[INFO] Running deplyment on ${{ vars.HOST }} using ${{ vars.USER }}."
       - name: Refering Secrets
         run: echo "[INFO] Password for ${{ vars.USER }} is  ${{ secrets.PASSWORD }}."
+    environment:
+      name: STAGING
         
-
+          
+  staging:
+    name: PROD DEPLOYMENT
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refering Env Variables
+        run: echo "[INFO] Running deplyment on ${{ vars.HOST }} using ${{ vars.USER }}."
+      - name: Refering Secrets
+        run: echo "[INFO] Password for ${{ vars.USER }} is  ${{ secrets.PASSWORD }}."
+    environment:
+      name: PROD
 
 
         
