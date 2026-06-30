@@ -48,7 +48,7 @@ jobs:
     steps:
       - name: Job with multiple execution dependency
         run: sleep 10        
-      - name: Checking runner info. Should stop it
+      - name: Checking runner info. Should stop it  q
         run: sw_vers          
 
         
